@@ -18,7 +18,7 @@ import java.util.Set;
  * <p>Date: 13-2-22 下午5:26
  * <p>Version: 1.0
  */
-public interface BaseTreeableService<M extends Treeable<ID>, ID extends Serializable> extends GenericService<Treeable,ID> {
+public interface BaseTreeableService<M extends Treeable<ID>, ID extends Serializable> extends GenericService<M,ID> {
 
     public M save(M m);
 
