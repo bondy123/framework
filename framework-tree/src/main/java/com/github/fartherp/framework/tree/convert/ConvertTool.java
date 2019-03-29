@@ -25,4 +25,6 @@ public interface ConvertTool<T extends Tree, S extends Treeable> {
      * @return 返回值
      */
     public List<T> findChildren(List<S> list, Function<S, T> mc);
+
+
 }

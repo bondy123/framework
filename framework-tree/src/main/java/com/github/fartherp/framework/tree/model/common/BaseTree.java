@@ -5,12 +5,14 @@
 package com.github.fartherp.framework.tree.model.common;
 
 
+import com.github.fartherp.framework.tree.bo.Treeable;
+
 /**
  * Created by framework .
  * Auth: hyssop
  * Date: 2016-09-09
  */
-public abstract class BaseTree implements Tree {
+public abstract class BaseTree extends Treeable<Long> {
     /**
      * URL
      */

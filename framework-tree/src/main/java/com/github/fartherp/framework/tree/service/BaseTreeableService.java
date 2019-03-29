@@ -5,6 +5,7 @@
 package com.github.fartherp.framework.tree.service;
 
 import com.github.fartherp.framework.database.mybatis.plugin.search.vo.Searchable;
+import com.github.fartherp.framework.database.service.ExtendGenericService;
 import com.github.fartherp.framework.database.service.GenericService;
 import com.github.fartherp.framework.tree.bo.Treeable;
 
@@ -18,7 +19,7 @@ import java.util.Set;
  * <p>Date: 13-2-22 下午5:26
  * <p>Version: 1.0
  */
-public interface BaseTreeableService<M extends Treeable<ID>, ID extends Serializable> extends GenericService<M,ID> {
+public interface BaseTreeableService<M extends Treeable<ID>, ID extends Serializable> extends ExtendGenericService<M,ID> {
 
     public M save(M m);
 
